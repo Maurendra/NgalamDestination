@@ -99,8 +99,8 @@ class c_user extends CI_Controller{
                'protocol'  => 'smtp',
                'mailpath'  => '/usr/sbin/sendmail',
                'smtp_host' => 'ssl://smtp.gmail.com',
-               'smtp_user' => 'noreplytestmau@gmail.com',   // Ganti dengan email gmail Anda.
-               'smtp_pass' => 'noreplytestmau@gmail',             // Password gmail Anda.
+               'smtp_user' => 'ntryit@gmail.com',   // Ganti dengan email gmail Anda.
+               'smtp_pass' => 'try',             // Password gmail Anda.
                'smtp_port' => 465,
                'smtp_keepalive' => TRUE,
                'smtp_crypto' => 'SSL',
@@ -128,8 +128,8 @@ class c_user extends CI_Controller{
 			}
 		}
 		if ($ada) {
-			$this->email->to('mrendra25@gmail.com');
-			$this->email->from('noreplytestmau@gmail.com','Jurnalweb');
+			$this->email->to('try@gmail.com');
+			$this->email->from('try@gmail.com','Jurnalweb');
 			$this->email->subject('Akun Anda');
 			$this->email->message('Username anda : ' .$username .'<br />' .'Password : ' .$pass);
 			if ($this->email->send()) {
